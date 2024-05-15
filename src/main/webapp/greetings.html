@@ -10,11 +10,16 @@
         <input type="text" id="username" name="username"><br><br>
         <input type="submit" value="Submit">
     </form>
-    <hr>
-    <h1>Restricted Access</h1>
-    <p>Nope,you are restricted!</p>
-    <hr>
-    <h1>Blacklisted User</h1>
-    <p>You are not allowed to access this resource.</p>
+    <CENTER>
+        <H1> Tenter votre chance a cette lotterie virtuelle!</H1>
+        <form action="j_security_check" method="post">
+            Votre nom svp: <input type="text" name="j_username"><br>
+            Votre rôle: <input type="password" name="j_password"><br><br>
+            Voulez vous supprimer ce nom de la base de données?<br>
+            Oui<input type="radio" name="delete" value="1"> 
+            Non<input type="radio" name="delete" value="0"><br><br>
+            <input type="submit" value="Submit Query">
+        </form>
+    </CENTER>
 </body>
 </html>
